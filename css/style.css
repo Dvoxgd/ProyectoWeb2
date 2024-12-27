@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&display=swap');
+@import url('bootstrap-icons-1.11.3/font/bootstrap-icons.min.css');
+:root{
+    --color1: #034AA6;
+    --color2: #77BF0A;
+    --color3: #F2B705;
+    --color4: #F28705;
+    --color5: #D92323;
+    --color-blanco: #FFFFFF;
+    --color-negro: #000000;
+    --color-gris-claro: #CCCCCC;
+    --color-gris-oscuro: #333333;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-weight: 200;
+    font-size: 4rem;
+    letter-spacing: -4px;
+}
+h2{
+    font-weight: 900;
+    font-size: 2rem;
+    letter-spacing: -2px;
+    text-transform: lowercase;/* Muestra el texto en minúsculas */
+}
+h3{
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+#page-header{
+    background-color: var(--color-gris-claro);
+    border-bottom: solid 1px var(--color-gris-oscuro);
+    padding: 30px 0;
+}
+#nosotros{
+    background-color: var(--color5);
+    color: var(--color-blanco);
+}
+#historia{
+    background-color: var(--color3);
+}
+#valores{
+    background-color: var(--color-negro);
+    color: var(--color-gris-claro);
+}
+#valores i{
+    color: var(--color2);
+    font-size: 3rem;
+}
+#cursos{
+    background-color: var(--color1);
+    color: var(--color-blanco);
+}
+#main-footer{
+    background-color: var(--color-gris-oscuro);
+    color: var(--color-gris-claro);
+    padding: 45px 0;
+}
+.padded{
+    padding: 90px 0;/* arriba y abajo / izquierda y derecha */
+}
+.icono-carrito, .icono-editar, .icono-eliminar{
+    cursor: pointer;
+}
+.icono-vista-rapida{
+    cursor:pointer;
+}
+.icono-vista-rapida:hover, .icono-editar:hover, .icono-eliminar:hover{
+    color: var(--color5);
+}
+
+.precio-anterior{
+    color: var(--color2);
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+@media(max-width:768px){
+    #empresa{
+        padding: 90px 0;
+    }
+}
+@media(max-width:992px){
+    #conferencia{
+        padding: 90px 0;
+    }
+}
+@media (min-width: 1600px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1520px;
+    }
+}

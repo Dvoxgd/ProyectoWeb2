@@ -1,0 +1,81 @@
+<header id="page-header">
+    <div class="container">
+        <h2>Directores</h2>
+    </div>
+</header>
+<section class="padded">
+    <div class="container">
+        <div class="mb-3">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#insertmodal">Nuevo Director</button>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Director</th>
+                    <th>Peliculas</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tbody-directores">
+
+            </tbody>
+        </table>
+
+    </div>
+</section>
+
+<!--Modal-->
+<div class="modal fade" id="insertmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title fs-5" id="exampleModalLabel">Nuevo Director</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="formInsert">
+          <div class="modal-body">
+            <div class="mb-3">
+              <input type="text" class="form-control" required minlength="5" placeholder="Nombres del director" id="txtDirectorNombres">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" required minlength="1" placeholder="Peliculas dirigidas" id="txtDirectorPeliculas">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title fs-5" id="exampleModalLabel">Nuevo Director</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="formInsert">
+          <div class="modal-body">
+            <div class="mb-3">
+              <input type="text" class="form-control" id="txtDirectorUpdateIdDirector">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" required minlength="5" placeholder="Nombres del director" id="txtDirectorUpdateNombres">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" required minlength="1" placeholder="Peliculas dirigidas" id="txtDirectorUpdatePeliculas">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
